@@ -11,7 +11,8 @@
       display: flex;
       justify-content: center;
       text-align: center;
-      background-image: linear-gradient(#ffe3be, #fff9c0);
+      align-items: flex-start;
+      background-color: white;
       height: 100vh;
       color: #4b4b4b;
       padding-top: 30px;
@@ -39,19 +40,30 @@
       background-color: white;
       border-radius: 8px;
       padding: 24px;
-      border: 2px solid #ffe367;
     }
 
     .label {
       font-weight: 600;
     }
 
-    .intro p {
-      margin: 0;
+    .section-spacer {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      height: 1px;
+      background-color: #4b4b4b;
+    }
+
+    .wrapper {
+      padding: 20px;
+      border: 1px solid #4b4b4b;
     }
 
     .subtitle {
-      font-size: 24px;
+      font-size: 26px;
+      margin: 0;
     }
 
     @media screen and (max-width: 500px) {
@@ -60,15 +72,22 @@
       }
     }
 
+    .subtitle2 {
+      margin-top: 15px;
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+
     .work-summary {
-      margin-top: 20px;
       display: flex;
       justify-content: center;
+      font-size: 19px;
     }
 
     .work-summary ul {
       margin: 0;
       padding-left: 20px;
+      width: 50%;
     }
 
     .work-summary li {
@@ -77,7 +96,6 @@
     }
 
     .contact {
-      margin-top: 20px;
       display: flex;
       flex-direction: column;
       gap: 18px;
@@ -94,18 +112,24 @@
   <div class="wrapper">
     <div class="section intro">
       <h1>Joe McIntire</h1>
-      <p class="subtitle">Creator of Quality Solutions</p>
+      <p class="subtitle">Creator of Quality Software Solutions</p>
+      <p class="subtitle2">Available for Freelance Work</p>
+    </div>
+    <div class="section-spacer">
     </div>
     <div class="section work-summary">
       <ul>
         <li>Web development</li>
         <li>React development</li>
         <li>Blazor development</li>
+      </ul>
+      <ul>
         <li>Reusable components</li>
         <li>REST API development</li>
-        <li>Web project architecture consulting</li>
+        <li>Web project architecture</li>
       </ul>
     </div>
+    <div class="section-spacer"></div>
     <div class="section contact">
       <p><span class="label">Hire me:</span> <a
           href="https://www.upwork.com/freelancers/~01a3006f092a8f8b21">https://www.upwork.com/freelancers/~01a3006f092a8f8b21</a>
