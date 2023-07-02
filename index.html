@@ -1,15 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Joe McIntire</title>
-  </head>
-  <body>
-    <div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joe McIntire</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      background-image: linear-gradient(#ffbb00, #ffee00);
+      height: 100vh;
+      color: #4b4b4b;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    @media screen and (max-width: 500px) {
+      body {
+        padding-top: 5px;
+      }
+    }
+
+    h1 {
+      font-size: 50px;
+      margin: 0;
+    }
+
+    @media screen and (max-width: 500px) {
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    .section {
+      background-color: white;
+      border-radius: 8px;
+      padding: 24px;
+      border: 3px solid #ffee00;
+    }
+
+    .label {
+      font-weight: 600;
+    }
+
+    .intro p {
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 500px) {
+      .subtitle {
+        font-size: 19px;
+      }
+    }
+
+    .work-summary {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .work-summary ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .work-summary li {
+      text-align: left;
+      padding-left: 5px;
+    }
+
+    .contact {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .contact p {
+      text-align: left;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="section intro">
       <h1>Joe McIntire</h1>
+      <p class="subtitle">Creator of Quality Solutions</p>
     </div>
-  </body>
+    <div class="section work-summary">
+      <ul>
+        <li>Web development</li>
+        <li>React development</li>
+        <li>Blazor development</li>
+        <li>Reusable components</li>
+        <li>REST API development</li>
+        <li>Web project architecture consulting</li>
+      </ul>
+    </div>
+    <div class="section contact">
+      <p><span class="label">Hire me:</span> <a
+          href="https://www.upwork.com/freelancers/~01a3006f092a8f8b21">https://www.upwork.com/freelancers/~01a3006f092a8f8b21</a>
+      </p>
+      <!-- <p><span class="label">Contact me:</span>
+      </p> -->
+    </div>
+  </div>
+</body>
+
 </html>
