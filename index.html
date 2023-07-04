@@ -6,8 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Joe McIntire</title>
   <style>
+    @font-face {
+      font-family: "Viga Regular";
+      src: url('Viga-Regular.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Roboto";
+      src: url('Roboto-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Roboto";
+      src: url('Roboto-Bold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
+
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
       display: flex;
       justify-content: center;
       text-align: center;
@@ -42,12 +63,15 @@
 
     .section {
       background-color: white;
-      border-radius: 8px;
-      padding: 24px 10px;
+      border-radius: 12px;
+      padding: 24px 30px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
     }
 
     .label {
-      font-weight: 600;
+      font-weight: bold;
     }
 
     .section-spacer {
@@ -62,8 +86,13 @@
 
     .wrapper {
       padding: 20px;
-      border: 1px solid #4b4b4b;
       max-width: 600px;
+      background-color: #474747;
+      border-radius: 50px;
+    }
+
+    .intro {
+      color: white;
     }
 
     .subtitle {
@@ -127,12 +156,16 @@
 
 <body>
   <div class="wrapper">
-    <div class="section intro">
-      <h1>Joe McIntire</h1>
-      <p class="subtitle">Creator of Quality Software Solutions</p>
-      <p class="subtitle2">Available for Freelance Work</p>
-    </div>
-    <div class="section-spacer">
+    <div class="intro">
+      <svg viewBox="0 0 100 18">
+        <text x="6" y="15" style='font-family: "Viga Regular"; fill: white;'>Joe McIntire</text>
+      </svg>
+      <svg viewBox="0 0 296 20">
+        <text x="16" y="15" style='font-family: "Viga Regular"; fill: white;'>Creator of Quality Software Solutions</text>
+      </svg>
+      <svg viewBox="0 0 225 20">
+        <text x="12" y="15" style='fill: white;'>Available for Freelance Work</text>
+      </svg>
     </div>
     <div class="section work-summary">
       <ul>
@@ -146,13 +179,12 @@
         <li>Web project architecture</li>
       </ul>
     </div>
-    <div class="section-spacer"></div>
     <div class="section contact">
       <p><span class="label">To see my portfolio, read testimonials and hire me visit my Upwork profile:</span> <a
           href="https://www.upwork.com/freelancers/~01a3006f092a8f8b21">https://www.upwork.com/freelancers/~01a3006f092a8f8b21</a>
       </p>
       <p><span class="label">If you'd like to chat connect with me on LinkedIn:</span> <a
-            href="https://www.linkedin.com/in/joe-mcintire-1792a51ab/">https://www.linkedin.com/in/joe-mcintire-1792a51ab/</a>
+          href="https://www.linkedin.com/in/joe-mcintire-1792a51ab/">https://www.linkedin.com/in/joe-mcintire-1792a51ab/</a>
       </p>
     </div>
   </div>
