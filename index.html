@@ -1,193 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joe McIntire</title>
+    <style>
+      @font-face {
+        font-family: "Viga Regular";
+        src: url("Viga-Regular.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Joe McIntire</title>
-  <style>
-    @font-face {
-      font-family: "Viga Regular";
-      src: url('Viga-Regular.otf') format('opentype');
-      font-weight: normal;
-      font-style: normal;
-    }
+      @font-face {
+        font-family: "Roboto";
+        src: url("Roboto-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
 
-    @font-face {
-      font-family: "Roboto";
-      src: url('Roboto-Regular.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
+      @font-face {
+        font-family: "Roboto";
+        src: url("Roboto-Bold.ttf") format("truetype");
+        font-weight: bold;
+        font-style: normal;
+      }
 
-    @font-face {
-      font-family: "Roboto";
-      src: url('Roboto-Bold.ttf') format('truetype');
-      font-weight: bold;
-      font-style: normal;
-    }
-
-    body {
-      font-family: "Roboto", Arial, Helvetica, sans-serif;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: flex-start;
-      background-color: white;
-      height: 100vh;
-      width: 100vw;
-      color: #4b4b4b;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      box-sizing: border-box;
-      margin: 0;
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-
-    @media screen and (max-width: 500px) {
       body {
-        padding-top: 5px;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: flex-start;
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+        color: #4b4b4b;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        margin: 0;
+        padding-left: 5px;
+        padding-right: 5px;
       }
-    }
 
-    h1 {
-      font-size: 50px;
-      margin: 0;
-    }
+      @media screen and (max-width: 500px) {
+        body {
+          padding-top: 5px;
+        }
+      }
 
-    @media screen and (max-width: 500px) {
       h1 {
-        font-size: 40px;
+        font-size: 50px;
+        margin: 0;
       }
-    }
 
-    .section {
-      background-color: white;
-      border-radius: 12px;
-      padding: 24px 30px;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 20px;
-      overflow: hidden;
-    }
+      @media screen and (max-width: 500px) {
+        h1 {
+          font-size: 40px;
+        }
+      }
 
-    .label {
-      font-weight: bold;
-    }
+      .section {
+        background-color: white;
+        border-radius: 12px;
+        padding: 24px 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+      }
 
-    .section-spacer {
-      margin-top: 5px;
-      margin-bottom: 5px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      height: 1px;
-      background-color: #4b4b4b;
-    }
+      .label {
+        font-weight: bold;
+      }
 
-    .wrapper {
-      padding: 20px;
-      max-width: 600px;
-      background-color: #474747;
-      border-radius: 50px;
-      min-width: 10px;
-    }
+      .section-spacer {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        height: 1px;
+        background-color: #4b4b4b;
+      }
 
-    .intro {
-      color: white;
-    }
+      .wrapper {
+        padding: 20px;
+        max-width: 600px;
+        background-color: #474747;
+        border-radius: 50px;
+        min-width: 10px;
+      }
 
-    .subtitle {
-      font-size: 26px;
-      margin: 0;
-    }
+      .intro {
+        color: white;
+        padding-bottom: 10px;
+      }
 
-    @media screen and (max-width: 500px) {
       .subtitle {
-        font-size: 16px;
+        font-size: 26px;
+        margin: 0;
       }
-    }
 
-    .subtitle2 {
-      margin-top: 15px;
-      margin-bottom: 0;
-      font-size: 20px;
-    }
+      @media screen and (max-width: 500px) {
+        .subtitle {
+          font-size: 16px;
+        }
+      }
 
-    .work-summary {
-      display: flex;
-      justify-content: center;
-      font-size: 19px;
-    }
+      .subtitle2 {
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-size: 20px;
+      }
 
-    @media screen and (max-width: 500px) {
       .work-summary {
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        font-size: 19px;
       }
-    }
 
-    .work-summary ul {
-      margin: 0;
-      padding-left: 20px;
-      width: 50%;
-    }
+      @media screen and (max-width: 500px) {
+        .work-summary {
+          flex-direction: column;
+        }
+      }
 
-    @media screen and (max-width: 500px) {
       .work-summary ul {
-        width: auto;
+        margin: 0;
+        padding-left: 20px;
+        width: 50%;
       }
-    }
 
-    .work-summary li {
-      text-align: left;
-      padding-left: 5px;
-    }
+      @media screen and (max-width: 500px) {
+        .work-summary ul {
+          width: auto;
+        }
+      }
 
-    .contact {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
+      .work-summary li {
+        text-align: left;
+        padding-left: 5px;
+      }
 
-    .contact p {
-      text-align: left;
-      margin: 0;
-    }
-  </style>
-</head>
+      .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
 
-<body>
-  <div class="wrapper">
-    <div class="intro">
-      <svg viewBox="0 0 100 18">
-        <text x="6" y="15" style='font-family: "Viga Regular"; fill: white;'>Joe McIntire</text>
-      </svg>
-      <svg viewBox="0 0 296 20">
-        <text x="16" y="15" style='font-family: "Viga Regular"; fill: white;'>Creator of Quality Software Solutions</text>
-      </svg>
-      <svg viewBox="0 0 225 20">
+      .contact p {
+        text-align: left;
+        margin: 0;
+      }
+
+      .min-section {
+        color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+
+      .min-section a {
+        color: white;
+      }
+
+      .min-section-row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .min-section-title {
+        line-height: 0;
+      }
+
+      .min-section-body {
+        text-align: left;
+      }
+
+      .min-section-icon {
+        fill: white;
+        height: 30px;
+        width: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="intro">
+        <svg viewBox="0 0 100 18">
+          <text x="6" y="15" style="font-family: 'Viga Regular'; fill: white">
+            Joe McIntire
+          </text>
+        </svg>
+        <svg viewBox="0 0 296 20">
+          <text x="16" y="15" style="font-family: 'Viga Regular'; fill: white">
+            Creator of Quality Software Solutions
+          </text>
+        </svg>
+        <!-- <svg viewBox="0 0 225 20">
         <text x="12" y="15" style='fill: white;'>Available for Freelance Work</text>
-      </svg>
-    </div>
-    <div class="section work-summary">
-      <ul>
-        <li>Web development</li>
-        <li>React development</li>
-        <li>Blazor development</li>
-      </ul>
-      <ul>
-        <li>Reusable components</li>
-        <li>REST API development</li>
-        <li>Web project architecture</li>
-      </ul>
-    </div>
-    <div class="section contact">
+      </svg> -->
+      </div>
+      <div class="section work-summary">
+        <ul>
+          <li>Web development</li>
+          <li>React development</li>
+          <li>Blazor development</li>
+        </ul>
+        <ul>
+          <li>Reusable components</li>
+          <li>REST API development</li>
+          <li>Web project architecture</li>
+        </ul>
+      </div>
+      <!-- <div class="section contact">
       <p><span class="label">If you'd like to chat connect with me on LinkedIn:</span> <a
           href="https://www.linkedin.com/in/joe-mcintire-1792a51ab/">https://www.linkedin.com/in/joe-mcintire-1792a51ab/</a>
       </p>
-    </div>
-  </div>
-</body>
+    </div> -->
+      <div class="min-section min-contact">
+        <div class="min-section-row">
+          <div class="min-section-title">
+            <svg
+              class="min-section-icon"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="19" cy="3" r="3"></circle>
+              <path
+                d="M6 8V6h9.03c-1.21-1.6-1.08-3.21-.92-4H4.01c-1.1 0-2 .89-2 2L2 22l4-4h14c1.1 0 2-.9 2-2V6.97C21.16 7.61 20.13 8 19 8H6zm8 6H6v-2h8v2zm4-3H6V9h12v2z"
+              ></path>
+            </svg>
+          </div>
+          <div class="min-section-body">
+            <a href="https://www.linkedin.com/in/joe-mcintire-1792a51ab/"
+              >https://www.linkedin.com/in/joe-mcintire-1792a51ab/</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="section portfolio">
 
+      </div>
+    </div>
+  </body>
 </html>
